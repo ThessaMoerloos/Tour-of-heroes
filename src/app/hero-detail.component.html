@@ -1,0 +1,26 @@
+<div *ngIf="hero">
+<h2>{{hero.name}} details:</h2>
+  <div>
+    <label>Id: </label> {{hero.id}}
+  </div>
+
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="hero.name" placeholder="Name" />
+  </div>
+
+  <div>
+    <label>Hair color: </label>
+    <input [(ngModel)]="hero.hairColor" placeholder="HairColor" />
+  </div>
+
+  <div>
+    <label>Ability: </label>
+    <input [(ngModel)]="hero.ability" placeholder="Ability" />
+  </div>
+
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+  
+
+</div>
